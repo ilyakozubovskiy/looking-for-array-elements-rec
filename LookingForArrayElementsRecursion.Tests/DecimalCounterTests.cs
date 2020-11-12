@@ -343,7 +343,7 @@ namespace LookingForArrayElementsRecursion.Tests
 
             // Act
             Assert.Throws<ArgumentOutOfRangeException>(
-                () => DecimalCounter.GetDecimalsCount(Array.Empty<decimal>(), ranges, 4, 100000),
+                () => DecimalCounter.GetDecimalsCount(DecimalCounterTests.ArrayWithFiveElements, ranges, 0, 100000),
                 message: "Method throws ArgumentOutOfRangeException in case the number of elements to search is greater than the number of elements available in the array starting from the startIndex position.");
         }
 
