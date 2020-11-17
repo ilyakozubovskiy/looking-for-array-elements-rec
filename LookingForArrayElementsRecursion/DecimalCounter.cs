@@ -1,5 +1,7 @@
 ﻿using System;
 
+#pragma warning disable S2368
+
 namespace LookingForArrayElementsRecursion
 {
     public static class DecimalCounter
